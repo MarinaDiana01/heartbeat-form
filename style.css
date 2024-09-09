@@ -1,0 +1,193 @@
+:root {
+  --textGray: #878B99;
+  --borderGray: #C3C7CF;
+  --black: #050E26;
+  --white: #FFFFFF;
+  --backgroundColor: #F3F5FB;
+  --scroll-bg-color: #eaeaea;
+  --scroll-thumb-color: #bbbaba;
+  --red: #FF0000;
+  --blackk: #000;
+  --hover-bg-color: rgb(39, 38, 38);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  color: var(--black);
+}
+
+.skillbrain-logo {
+  width: 60px;
+  border-radius: 6px;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 60px;
+}
+
+
+/*------------ Form ------------*/
+.form-container {
+  width: 400px;
+}
+
+.form-title {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.form-scrollbar {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 320px;
+  padding-right: 16px; 
+}
+
+.form-scrollbar::-webkit-scrollbar { 
+  width: 4px;
+}
+
+.form-scrollbar::-webkit-scrollbar-track { 
+  background-color: var(--scroll-bg-color);
+  border-radius: 6px;
+}
+
+.form-scrollbar::-webkit-scrollbar-thumb { 
+  background-color: var(--scroll-thumb-color);
+  border-radius: 6px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.form-label {
+  color: var(--textGray);
+  font-weight: 700;
+}
+
+.form-input {
+  border: 1px solid var(--borderGray);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 16px; 
+}
+
+.email-error-message {
+  color: var(--red);
+  display: none;
+}
+
+.form-name-container {
+  display: flex;
+  gap: 12px;
+}
+
+.form-name-container .form-group {
+  width: calc(50% - 6px); 
+}
+
+.description-input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.button-save {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  background-color: var(--blackk);
+  color: var(--white);
+  font-size: 18px;
+  padding: 6px 60px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.button-save:hover {
+  background-color: var(--hover-bg-color);
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+
+/*------------ User card ------------*/
+.user-card-container {
+  width: 448px;
+  position: relative;
+}
+
+.user-card {
+  width: 300px;
+  height: fit-content;
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.15);
+  padding: 16px;
+  position: relative; 
+  z-index: 1; 
+  overflow: hidden; 
+  display: none;
+}
+
+.user-name-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.user-name-container h6 {
+  font-size: 20px;
+}
+
+.user-email {
+  color: var(--textGray);
+  margin-bottom: 8px;
+}
+
+.user-content-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.user-icon-location {
+  display: none;
+}
+
+.user-icon-phone {
+  display: none;
+}
+
+.user-bio {
+  padding-top: 14px;
+  border-top: 2px solid var(--scroll-bg-color);
+}
+
+.user-card-container > img {
+  border-radius: 48px;
+  position: absolute;
+  right: 0;
+  bottom: 108px;
+  opacity: 0.4; 
+}

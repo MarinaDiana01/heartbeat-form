@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <img class="skillbrain-logo" src="https://cdn.theorg.com/af9bf5ab-21a9-4ad5-a4f9-e4aea7b9e67c_thumb.jpg"
+    alt="SkillBrain logo">
+
+  <div class="section-container">
+
+    <!-- Form -->
+    <div class="form-container">
+      <h2 class="form-title"> What do we call you? </h2>
+
+      <form class="form-scrollbar">
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input email-input" type="email" name="email" />
+          <p class="email-error-message">Please enter a valid email address</p>
+        </div>
+
+        <div class="form-name-container">
+          <div class="form-group">
+            <label class="form-label" for="first-name">First Name</label>
+            <input class="form-input first-name-input" type="text" name="first-name" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="last-name">Last Name</label>
+            <input class="form-input last-name-input" type="text" name="last-name" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="location">Location</label>
+          <input class="form-input location-input" type="text" name="location">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="phone">Phone</label>
+          <input class="form-input phone-input" type="tel" name="phone" maxlength="10">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="description">Personal description</label>
+          <textarea class="form-input description-input" name="description" cols="30" rows="4"
+            maxlength="200"></textarea>
+        </div>
+      </form>
+      <button class="button-save">Save</button>
+    </div>
+
+    <!-- User card -->
+    <div class="user-card-container">
+
+      <div class="user-card">
+        <div class="user-name-container">
+          <h6 class="user-first-name"></h6>
+          <h6 class="user-last-name"></h6>
+        </div>
+
+        <p class="user-email"></p>
+
+        <div class="user-content-group">
+          <img class="user-icon-location" src="./images/icon-location.svg" alt="icon-location">
+          <p class="user-location"></p>
+        </div>
+
+        <div class="user-content-group">
+          <img class="user-icon-phone" src="./images/icon-phone.svg" alt="icon-phone">
+          <p class="user-phone"></p>
+        </div>
+
+        <p class="user-bio"></p>
+      </div>
+      <img src="https://cdn.theorg.com/af9bf5ab-21a9-4ad5-a4f9-e4aea7b9e67c_thumb.jpg" alt="SkillBrain logo">
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
